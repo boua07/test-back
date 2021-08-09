@@ -2,7 +2,7 @@ var express = require("express");
 const mongoose = require("mongoose");
 var cors = require("cors");
 const bodyParser = require("body-parser");
-const dossiers = require("./route/dossiers");
+const dossiers = require("./route/filters");
 
 
 
@@ -37,7 +37,7 @@ mongoose
 //delegating a router to a given url
 
 
-app.use("/dossier", dossiers);
+app.use("/filters", dossiers);
 
 
 
